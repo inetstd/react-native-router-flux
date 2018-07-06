@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName='src/LightboxNavigator.js';
+Object.defineProperty(exports,"__esModule",{value:true});
 
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNavigation=require('react-navigation');
@@ -31,9 +31,9 @@ initialIndex=i;
 }
 var Popup=index!==initialIndex?routeConfigs[routes[index].routeName].screen:null;
 
-return _react2.default.createElement(_reactNative.View,{style:{flex:1},__source:{fileName:_jsxFileName,lineNumber:34}},
-_react2.default.createElement(Component,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:routes[initialIndex],addListener:_navigationStore2.default.addListener}),__source:{fileName:_jsxFileName,lineNumber:35}}),
-Popup&&_react2.default.createElement(Popup,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:routes[index],addListener:_navigationStore2.default.addListener}),__source:{fileName:_jsxFileName,lineNumber:36}}));
+return _react2.default.createElement(_reactNative.View,{style:{flex:1}},
+_react2.default.createElement(Component,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:routes[initialIndex],addListener:_navigationStore2.default.addListener})}),
+Popup&&_react2.default.createElement(Popup,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:routes[index],addListener:_navigationStore2.default.addListener})}));
 
 });
 

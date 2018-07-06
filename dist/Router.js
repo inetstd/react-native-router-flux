@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _slicedToArray=function(){function sliceIterator(arr,i){var _arr=[];var _n=true;var _d=false;var _e=undefined;try{for(var _i=arr[typeof Symbol==='function'?Symbol.iterator:'@@iterator'](),_s;!(_n=(_s=_i.next()).done);_n=true){_arr.push(_s.value);if(i&&_arr.length===i)break;}}catch(err){_d=true;_e=err;}finally{try{if(!_n&&_i["return"])_i["return"]();}finally{if(_d)throw _e;}}return _arr;}return function(arr,i){if(Array.isArray(arr)){return arr;}else if((typeof Symbol==='function'?Symbol.iterator:'@@iterator')in Object(arr)){return sliceIterator(arr,i);}else{throw new TypeError("Invalid attempt to destructure non-iterable instance");}};}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp2,_jsxFileName='src/Router.js';var _react=require('react');var _react2=_interopRequireDefault(_react);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _slicedToArray=function(){function sliceIterator(arr,i){var _arr=[];var _n=true;var _d=false;var _e=undefined;try{for(var _i=arr[typeof Symbol==='function'?Symbol.iterator:'@@iterator'](),_s;!(_n=(_s=_i.next()).done);_n=true){_arr.push(_s.value);if(i&&_arr.length===i)break;}}catch(err){_d=true;_e=err;}finally{try{if(!_n&&_i["return"])_i["return"]();}finally{if(_d)throw _e;}}return _arr;}return function(arr,i){if(Array.isArray(arr)){return arr;}else if((typeof Symbol==='function'?Symbol.iterator:'@@iterator')in Object(arr)){return sliceIterator(arr,i);}else{throw new TypeError("Invalid attempt to destructure non-iterable instance");}};}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp2;var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _native=require('mobx-react/native');
 var _reactNative=require('react-native');
 var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
@@ -69,7 +69,7 @@ _navigationStore2.default[actionKey](params);
 {
 var AppNavigator=this.props.navigator;
 return(
-_react2.default.createElement(AppNavigator,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:_navigationStore2.default.dispatch,state:_navigationStore2.default.state,addListener:_navigationStore2.default.addListener}),__source:{fileName:_jsxFileName,lineNumber:72}}));
+_react2.default.createElement(AppNavigator,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:_navigationStore2.default.dispatch,state:_navigationStore2.default.state,addListener:_navigationStore2.default.addListener})}));
 
 }}]);return App;}(_react2.default.Component),_class2.propTypes={navigator:_propTypes2.default.func,backAndroidHandler:_propTypes2.default.func,uriPrefix:_propTypes2.default.string,onDeepLink:_propTypes2.default.func},_temp2))||_class;
 
@@ -88,9 +88,9 @@ if(dispatch&&state){
 
 _navigationStore2.default.setState(state);
 _navigationStore2.default.dispatch=dispatch;
-return _react2.default.createElement(AppNavigator,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:state,addListener:_navigationStore2.default.addListener}),uriPrefix:uriPrefix,__source:{fileName:_jsxFileName,lineNumber:91}});
+return _react2.default.createElement(AppNavigator,{navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:state,addListener:_navigationStore2.default.addListener}),uriPrefix:uriPrefix});
 }
-return _react2.default.createElement(App,_extends({},props,{onDeepLink:onDeepLink,navigator:AppNavigator,uriPrefix:uriPrefix,__source:{fileName:_jsxFileName,lineNumber:93}}));
+return _react2.default.createElement(App,_extends({},props,{onDeepLink:onDeepLink,navigator:AppNavigator,uriPrefix:uriPrefix}));
 };
 Router.propTypes={
 createReducer:_propTypes2.default.func,

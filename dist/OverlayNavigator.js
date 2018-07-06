@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName='src/OverlayNavigator.js';
+Object.defineProperty(exports,"__esModule",{value:true});
 
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNavigation=require('react-navigation');
@@ -37,12 +37,12 @@ for(var _i=0;_i<tabsConfig.order.length;_i++){
 var routeName=tabsConfig.order[_i];
 if(initialRouteName!==routeName){
 var Overlay=routeConfigs[routeName].screen;
-overlays.push(_react2.default.createElement(Overlay,{key:routeName,navigation:{dispatch:dispatch,state:routesMap[routeName],addListener:_navigationStore2.default.addListener},__source:{fileName:_jsxFileName,lineNumber:40}}));
+overlays.push(_react2.default.createElement(Overlay,{key:routeName,navigation:{dispatch:dispatch,state:routesMap[routeName],addListener:_navigationStore2.default.addListener}}));
 }
 }
 var ContentComponent=tabsConfig.contentComponent||_reactNative.View;
-return _react2.default.createElement(ContentComponent,{style:{flex:1},__source:{fileName:_jsxFileName,lineNumber:44}},
-_react2.default.createElement(Component,{navigation:{dispatch:dispatch,state:routes[initialIndex],addListener:_navigationStore2.default.addListener},__source:{fileName:_jsxFileName,lineNumber:45}}),
+return _react2.default.createElement(ContentComponent,{style:{flex:1}},
+_react2.default.createElement(Component,{navigation:{dispatch:dispatch,state:routes[initialIndex],addListener:_navigationStore2.default.addListener}}),
 overlays);
 
 });
